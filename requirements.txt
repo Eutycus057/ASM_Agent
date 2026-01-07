@@ -4,9 +4,7 @@ pydantic
 langchain
 langgraph
 openai
-yt-dlp
 python-dotenv
-playwright
 edge-tts
 google-generativeai
 google-api-core

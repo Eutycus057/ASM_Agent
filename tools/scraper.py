@@ -1,7 +1,11 @@
 import asyncio
 from typing import List
 from models import TrendData
-from playwright.async_api import async_playwright
+try:
+    from playwright.async_api import async_playwright
+    HAS_PLAYWRIGHT = True
+except ImportError:
+    HAS_PLAYWRIGHT = False
 import random
 
 class PlaywrightScraper:
@@ -22,6 +26,18 @@ class PlaywrightScraper:
         ]
         
         trends = []
+        if not HAS_PLAYWRIGHT:
+            print("--- Playwright not installed. Using Strategic Topic Fallback ---")
+            trends.append(TrendData(
+                video_id="strategic_fallback_no_playwright",
+                description=f"Strategic hook based on latest {query} discussions (No Discovery Engine).",
+                hashtags=["viral", query.split()[0]],
+                author="StrategyBot",
+                url=f"https://www.google.com/search?q={query.replace(' ', '+')}",
+                transcript="System-generated strategic insight based on topic keyword."
+            ))
+            return trends
+
         async with async_playwright() as p:
             browser = await p.chromium.launch(headless=self.headless)
             context = await browser.new_context(
