@@ -1,7 +1,5 @@
-import os
 import json
 import re
-import google.generativeai as genai
 from typing import Optional, List, Dict
 from dotenv import load_dotenv
 
@@ -9,10 +7,16 @@ load_dotenv()
 
 class GeminiDirector:
     def __init__(self):
+        import os
         self.api_key = os.environ.get("GOOGLE_API_KEY") or os.environ.get("GEMINI_API_KEY")
         if self.api_key:
-            genai.configure(api_key=self.api_key)
-            self.model = genai.GenerativeModel('gemini-2.0-flash')
+            try:
+                import google.generativeai as genai
+                genai.configure(api_key=self.api_key)
+                self.model = genai.GenerativeModel('gemini-2.0-flash')
+            except Exception as e:
+                print(f"FAILED to initialize GeminiDirector: {e}")
+                self.model = None
         else:
             self.model = None
             print("WARNING: Gemini API Key not found. GeminiDirector features will be limited.")

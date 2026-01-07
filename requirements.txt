@@ -9,6 +9,8 @@ python-dotenv
 playwright
 edge-tts
 google-generativeai
+google-api-core
+google-auth
 requests
 moviepy
 Pillow

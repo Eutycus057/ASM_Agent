@@ -13,10 +13,17 @@ class ContentGenerator:
         self.gemini_key = os.environ.get("GOOGLE_API_KEY") or os.environ.get("GEMINI_API_KEY")
         
         if self.gemini_key:
-            import google.generativeai as genai
-            genai.configure(api_key=self.gemini_key)
-            self.model = genai.GenerativeModel('gemini-2.0-flash')
-            self.use_gemini = True
+            try:
+                import google.generativeai as genai
+                genai.configure(api_key=self.gemini_key)
+                self.model = genai.GenerativeModel('gemini-2.0-flash')
+                self.use_gemini = True
+            except Exception as e:
+                print(f"FAILED to initialize Gemini: {e}")
+                self.use_gemini = False
+                from openai import OpenAI
+                self.client = OpenAI(api_key=self.openai_key)
+                self.model_name = "gpt-4o-mini"
         else:
             self.use_gemini = False
             from openai import OpenAI
