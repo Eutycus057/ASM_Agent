@@ -13,7 +13,8 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-app = FastAPI(title="Autonomous Social Media Agent")
+VERSION = "1.0.1-RESILIENT-IMPORTS"
+app = FastAPI(title="Autonomous Social Media Agent", version=VERSION)
 
 # Enable CORS
 app.add_middleware(
@@ -40,7 +41,7 @@ class ApprovalRequest(BaseModel):
 
 @app.get("/api/health")
 def read_root():
-    return {"status": "Social Media Agent is Active"}
+    return {"status": "Social Media Agent is Active", "version": VERSION}
 
 @app.get("/api/posts")
 def get_posts():
