@@ -1,0 +1,2 @@
+Available models:
+Error: Timeout of 60.0s exceeded, last exception: 503 failed to connect to all addresses; last error: UNKNOWN: ipv6:%5B2a00:1450:401a:801::200a%5D:443: connect: Network is unreachable (101)

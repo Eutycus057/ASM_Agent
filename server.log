@@ -1,0 +1,87 @@
+INFO:     Started server process [729]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+Resuming existing failed workflow for topic: In a rural African village where tradition governs both love and legacy, two families gather beneath an ancient tree for a dowry negotiation that will determine the future of a young couple deeply in love. Elders debate livestock, land, and symbolic gifts, each demand carrying generations of meaning and unspoken pride. As tensions rise and voices harden, hidden family secrets, economic pressures, and the couple’s quiet resistance begin to surface. Write a story that explores how culture, honor, and modern aspirations collide during this single, decisive afternoon—and whether love can reshape a tradition without breaking it (ID: 48)
+INFO:     127.0.0.1:43470 - "POST /api/run-workflow HTTP/1.1" 200 OK
+--- Creative Strategist Scripting ---
+Using existing strategic analysis.
+--- Content Creator Finalizing Draft ---
+Using existing content draft.
+--- Voice Generation (TTS) ---
+Using existing voiceover: frontend/assets/voice_48.mp3
+--- Multi-Scene Cinematic Animation Orchestration ---
+--- Processing Scene 1/9 ---
+Using existing scene video: frontend/assets/scene_raw_48_0.mp4
+--- Processing Scene 2/9 ---
+Using existing scene video: frontend/assets/scene_raw_48_1.mp4
+--- Processing Scene 3/9 ---
+Using existing scene video: frontend/assets/scene_raw_48_2.mp4
+--- Processing Scene 4/9 ---
+Using existing scene video: frontend/assets/scene_raw_48_3.mp4
+--- Processing Scene 5/9 ---
+Using existing scene video: frontend/assets/scene_raw_48_4.mp4
+--- Processing Scene 6/9 ---
+Using existing scene video: frontend/assets/scene_raw_48_5.mp4
+--- Processing Scene 7/9 ---
+Using existing scene video: frontend/assets/scene_raw_48_6.mp4
+--- Processing Scene 8/9 ---
+Using existing scene video: frontend/assets/scene_raw_48_7.mp4
+--- Processing Scene 9/9 ---
+Using existing scene video: frontend/assets/scene_raw_48_8.mp4
+--- Generating Background Music (ElevenLabs): Emotional, melancholic African folk music with subtle modern orchestral elements. Build tension and release throughout the video, reflecting the emotional journey of the characters. Incorporate traditional instruments and vocal harmonies. (60s) ---
+Background music saved to frontend/assets/music_48.mp3
+--- Assembling Multi-Scene Cinematic Video (with Fades): animated_48.mp4 ---
+Layering background music: frontend/assets/music_48.mp3
+MoviePy - Building video frontend/assets/animated_48.mp4.
+MoviePy - Writing audio in animated_48TEMP_MPY_wvf_snd.mp4
+chunk:   0%|          | 0/1597 [00:00<?, ?it/s, now=None]chunk:   0%|          | 2/1597 [00:02<33:34,  1.26s/it, now=None]chunk:   0%|          | 3/1597 [00:02<22:15,  1.19it/s, now=None]chunk:   1%|          | 8/1597 [00:02<06:22,  4.15it/s, now=None]chunk:   1%|          | 16/1597 [00:03<02:45,  9.55it/s, now=None]chunk:   2%|▏         | 25/1597 [00:03<01:36, 16.34it/s, now=None]chunk:   2%|▏         | 33/1597 [00:03<01:07, 23.23it/s, now=None]chunk:   2%|▏         | 39/1597 [00:03<00:56, 27.48it/s, now=None]chunk:   3%|▎         | 45/1597 [00:03<00:53, 29.21it/s, now=None]chunk:   3%|▎         | 50/1597 [00:03<00:52, 29.32it/s, now=None]chunk:   4%|▍         | 60/1597 [00:04<00:36, 41.99it/s, now=None]chunk:   6%|▌         | 92/1597 [00:04<00:22, 67.20it/s, now=None]chunk:   6%|▌         | 99/1597 [00:04<00:23, 62.65it/s, now=None]chunk:   7%|▋         | 106/1597 [00:06<01:53, 13.19it/s, now=None]chunk:   7%|▋         | 111/1597 [00:13<07:06,  3.48it/s, now=None]chunk:   8%|▊         | 135/1597 [00:13<03:19,  7.34it/s, now=None]chunk:   9%|▉         | 147/1597 [00:13<02:28,  9.78it/s, now=None]chunk:  11%|█         | 169/1597 [00:13<01:27, 16.33it/s, now=None]chunk:  12%|█▏        | 197/1597 [00:13<00:51, 27.23it/s, now=None]chunk:  13%|█▎        | 213/1597 [00:14<00:45, 30.49it/s, now=None]chunk:  14%|█▍        | 226/1597 [00:14<00:37, 36.69it/s, now=None]chunk:  15%|█▍        | 238/1597 [00:14<00:35, 38.61it/s, now=None]chunk:  16%|█▌        | 249/1597 [00:14<00:29, 45.28it/s, now=None]chunk:  16%|█▌        | 259/1597 [00:14<00:29, 45.06it/s, now=None]chunk:  17%|█▋        | 269/1597 [00:15<00:25, 51.85it/s, now=None]chunk:  19%|█▉        | 305/1597 [00:15<00:13, 95.63it/s, now=None]chunk:  20%|██        | 320/1597 [00:15<00:24, 52.18it/s, now=None]chunk:  21%|██        | 331/1597 [00:16<00:22, 55.89it/s, now=None]chunk:  21%|██▏       | 341/1597 [00:16<00:22, 55.21it/s, now=None]chunk:  22%|██▏       | 350/1597 [00:16<00:27, 46.05it/s, now=None]chunk:  22%|██▏       | 357/1597 [00:17<00:37, 32.77it/s, now=None]chunk:  24%|██▎       | 377/1597 [00:17<00:23, 51.86it/s, now=None]chunk:  24%|██▍       | 389/1597 [00:17<00:21, 57.28it/s, now=None]chunk:  25%|██▍       | 399/1597 [00:17<00:20, 57.73it/s, now=None]chunk:  26%|██▌       | 408/1597 [00:17<00:31, 37.66it/s, now=None]chunk:  28%|██▊       | 452/1597 [00:18<00:13, 87.80it/s, now=None]chunk:  29%|██▉       | 470/1597 [00:19<00:28, 40.00it/s, now=None]/home/eutycus/jacenv/lib/python3.12/site-packages/moviepy/audio/io/readers.py:244: UserWarning: Error in file frontend/assets/music_48.mp3, At time t=22.03-0.03 seconds, indices wanted: 0-972404, but len(buffer)=200000
+index 971512 is out of bounds for axis 0 with size 200000
+  warnings.warn(
+chunk:  31%|███       | 488/1597 [00:23<01:40, 11.02it/s, now=None]chunk:  33%|███▎      | 524/1597 [00:23<00:55, 19.26it/s, now=None]chunk:  35%|███▍      | 557/1597 [00:24<00:35, 29.15it/s, now=None]chunk:  36%|███▌      | 577/1597 [00:24<00:28, 36.14it/s, now=None]chunk:  37%|███▋      | 596/1597 [00:24<00:25, 39.15it/s, now=None]chunk:  40%|███▉      | 631/1597 [00:24<00:16, 59.90it/s, now=None]chunk:  41%|████      | 651/1597 [00:24<00:13, 70.37it/s, now=None]chunk:  42%|████▏     | 671/1597 [00:24<00:11, 81.97it/s, now=None]chunk:  43%|████▎     | 689/1597 [00:25<00:10, 88.04it/s, now=None]chunk:  44%|████▍     | 706/1597 [00:25<00:09, 97.99it/s, now=None]chunk:  45%|████▌     | 726/1597 [00:25<00:07, 115.17it/s, now=None]chunk:  47%|████▋     | 743/1597 [00:25<00:07, 121.43it/s, now=None]chunk:  48%|████▊     | 760/1597 [00:25<00:07, 119.51it/s, now=None]chunk:  49%|████▊     | 775/1597 [00:25<00:07, 113.16it/s, now=None]chunk:  49%|████▉     | 789/1597 [00:25<00:07, 104.12it/s, now=None]chunk:  50%|█████     | 801/1597 [00:26<00:07, 104.81it/s, now=None]chunk:  51%|█████▏    | 821/1597 [00:26<00:07, 109.99it/s, now=None]chunk:  52%|█████▏    | 837/1597 [00:26<00:06, 112.51it/s, now=None]chunk:  53%|█████▎    | 849/1597 [00:26<00:07, 99.30it/s, now=None] chunk:  54%|█████▍    | 861/1597 [00:26<00:07, 99.27it/s, now=None]chunk:  55%|█████▍    | 873/1597 [00:26<00:06, 103.53it/s, now=None]chunk:  56%|█████▌    | 894/1597 [00:26<00:06, 112.86it/s, now=None]chunk:  57%|█████▋    | 906/1597 [00:27<00:06, 113.24it/s, now=None]chunk:  58%|█████▊    | 921/1597 [00:27<00:05, 120.81it/s, now=None]chunk:  58%|█████▊    | 934/1597 [00:27<00:05, 116.59it/s, now=None]chunk:  59%|█████▉    | 949/1597 [00:27<00:05, 120.71it/s, now=None]chunk:  60%|██████    | 962/1597 [00:27<00:05, 118.93it/s, now=None]                                                                    Multi-Scene Assembly Error: index 0 is out of bounds for axis 0 with size 0
+Workflow Finished with Error: Multi-scene video assembly failed
+INFO:     127.0.0.1:53762 - "HEAD / HTTP/1.1" 405 Method Not Allowed
+INFO:     127.0.0.1:58212 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58212 - "GET /assets/style.css?v=3 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40520 - "GET /assets/app.js?v=15 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58212 - "GET /api/posts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40520 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:58212 - "GET /api/posts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58212 - "GET /assets/assets/animated_33.mp4 HTTP/1.1" 206 Partial Content
+INFO:     127.0.0.1:40520 - "GET /assets/assets/animated_30.mp4 HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:59762 - "GET /assets/assets/animated_29.mp4 HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:59776 - "GET /assets/assets/animated_27.mp4 HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:59792 - "GET /assets/assets/animated_26.mp4 HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:59802 - "GET /assets/assets/animated_28.mp4 HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:43606 - "GET /api/posts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43624 - "GET /assets/assets/animated_18.mp4 HTTP/1.1" 206 Partial Content
+INFO:     127.0.0.1:43634 - "GET /assets/assets/animated_24.mp4 HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:43634 - "GET /assets/assets/animated_20.mp4 HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:43646 - "GET /assets/assets/animated_23.mp4 HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:43610 - "GET /assets/assets/animated_19.mp4 HTTP/1.1" 206 Partial Content
+INFO:     127.0.0.1:43672 - "GET /assets/assets/animated_25.mp4 HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:43672 - "GET /assets/assets/animated_18.mp4 HTTP/1.1" 206 Partial Content
+INFO:     127.0.0.1:43680 - "GET /assets/assets/animated_18.mp4 HTTP/1.1" 206 Partial Content
+INFO:     127.0.0.1:43680 - "GET /assets/assets/animated_18.mp4 HTTP/1.1" 206 Partial Content
+INFO:     127.0.0.1:43696 - "GET /api/posts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42272 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42288 - "GET /api/posts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42288 - "GET /assets/style.css?v=3 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42272 - "GET /assets/app.js?v=15 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42288 - "GET /api/posts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42272 - "GET /api/posts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42272 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:42272 - "GET /assets/assets/animated_33.mp4 HTTP/1.1" 206 Partial Content
+INFO:     127.0.0.1:39642 - "GET /api/posts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39656 - "GET /api/posts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59706 - "GET /api/posts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59714 - "GET /api/posts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49736 - "GET /api/posts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49744 - "GET /api/posts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38298 - "GET /api/posts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:48402 - "GET /api/posts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58424 - "GET /api/posts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58434 - "GET /api/posts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39668 - "GET /api/posts HTTP/1.1" 200 OK
+Resuming existing failed workflow for topic: In a rural African village where tradition governs both love and legacy, two families gather beneath an ancient tree for a dowry negotiation that will determine the future of a young couple deeply in love. Elders debate livestock, land, and symbolic gifts, each demand carrying generations of meaning and unspoken pride. As tensions rise and voices harden, hidden family secrets, economic pressures, and the couple’s quiet resistance begin to surface. Write a story that explores how culture, honor, and modern aspirations collide during this single, decisive afternoon—and whether love can reshape a tradition without breaking it (ID: 48)
+INFO:     127.0.0.1:37954 - "POST /api/run-workflow HTTP/1.1" 200 OK

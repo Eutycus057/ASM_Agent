@@ -1,0 +1,82 @@
+INFO:     Started server process [8420]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+INFO:     127.0.0.1:46810 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46810 - "GET /assets/style.css?v=3 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46818 - "GET /assets/app.js?v=15 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46818 - "GET /api/posts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46810 - "GET /api/posts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46832 - "GET /assets/assets/animated_33.mp4 HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:46832 - "GET /assets/assets/animated_24.mp4 HTTP/1.1" 206 Partial Content
+INFO:     127.0.0.1:57766 - "GET /api/posts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45310 - "GET /api/posts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45324 - "GET /api/posts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44318 - "GET /api/posts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44322 - "GET /api/posts HTTP/1.1" 200 OK
+Resuming existing failed workflow for topic: Write a short scene set in an African village where community disputes are resolved through a council of elders under a sacred tree. Show how storytelling, proverbs, collective listening, and reconciliation guide the process, emphasizing harmony, respect, and restoration rather than punishment. (ID: 43)
+INFO:     127.0.0.1:44322 - "POST /api/run-workflow HTTP/1.1" 200 OK
+--- Creative Strategist Scripting ---
+Using existing strategic analysis.
+--- Content Creator Finalizing Draft ---
+Using existing content draft.
+INFO:     127.0.0.1:44322 - "GET /api/posts HTTP/1.1" 200 OK
+--- Voice Generation (TTS) ---
+Using existing voiceover: frontend/assets/voice_43.mp3
+--- Multi-Scene Cinematic Animation Orchestration ---
+--- Processing Scene 1/10 ---
+Using existing scene video: frontend/assets/scene_raw_43_0.mp4
+--- Processing Scene 2/10 ---
+Using existing scene video: frontend/assets/scene_raw_43_1.mp4
+--- Processing Scene 3/10 ---
+Using existing scene video: frontend/assets/scene_raw_43_2.mp4
+--- Processing Scene 4/10 ---
+Using existing scene video: frontend/assets/scene_raw_43_3.mp4
+--- Processing Scene 5/10 ---
+Using existing scene video: frontend/assets/scene_raw_43_4.mp4
+--- Processing Scene 6/10 ---
+Using existing scene video: frontend/assets/scene_raw_43_5.mp4
+--- Processing Scene 7/10 ---
+Using existing scene video: frontend/assets/scene_raw_43_6.mp4
+--- Processing Scene 8/10 ---
+Using existing scene video: frontend/assets/scene_raw_43_7.mp4
+--- Processing Scene 9/10 ---
+Using existing scene video: frontend/assets/scene_raw_43_8.mp4
+--- Processing Scene 10/10 ---
+Using existing scene video: frontend/assets/scene_raw_43_9.mp4
+--- Generating Background Music (ElevenLabs): Uplifting and hopeful African folk music with gentle percussion and melodic instruments like the kora or mbira. Music should build in intensity as the scene progresses, culminating in a feeling of resolution and peace. (60s) ---
+Background music saved to frontend/assets/music_43.mp3
+--- Assembling Multi-Scene Cinematic Video (with Fades): animated_43.mp4 ---
+Layering background music: frontend/assets/music_43.mp3
+MoviePy - Building video frontend/assets/animated_43.mp4.
+MoviePy - Writing audio in animated_43TEMP_MPY_wvf_snd.mp4
+chunk:   0%|          | 0/1950 [00:00<?, ?it/s, now=None]chunk:   0%|          | 2/1950 [00:06<1:49:06,  3.36s/it, now=None]chunk:   1%|          | 21/1950 [00:06<07:34,  4.25it/s, now=None] chunk:   2%|▏         | 33/1950 [00:07<04:23,  7.28it/s, now=None]chunk:   2%|▏         | 42/1950 [00:08<04:24,  7.21it/s, now=None]chunk:   4%|▎         | 73/1950 [00:08<01:49, 17.09it/s, now=None]chunk:   4%|▍         | 81/1950 [00:09<01:48, 17.15it/s, now=None]chunk:   5%|▌         | 102/1950 [00:11<02:24, 12.80it/s, now=None]chunk:   6%|▌         | 109/1950 [00:19<08:03,  3.81it/s, now=None]chunk:   8%|▊         | 150/1950 [00:19<03:22,  8.91it/s, now=None]chunk:   8%|▊         | 165/1950 [00:21<03:07,  9.50it/s, now=None]chunk:  10%|█         | 204/1950 [00:21<01:43, 16.89it/s, now=None]chunk:  12%|█▏        | 238/1950 [00:21<01:14, 22.86it/s, now=None]chunk:  13%|█▎        | 255/1950 [00:22<01:01, 27.58it/s, now=None]chunk:  14%|█▎        | 267/1950 [00:22<00:53, 31.51it/s, now=None]chunk:  16%|█▌        | 306/1950 [00:22<00:37, 43.28it/s, now=None]chunk:  17%|█▋        | 328/1950 [00:22<00:30, 52.75it/s, now=None]chunk:  18%|█▊        | 351/1950 [00:22<00:23, 67.24it/s, now=None]chunk:  19%|█▉        | 366/1950 [00:23<00:30, 52.42it/s, now=None]chunk:  21%|██        | 408/1950 [00:23<00:17, 86.11it/s, now=None]chunk:  22%|██▏       | 427/1950 [00:23<00:15, 97.47it/s, now=None]chunk:  23%|██▎       | 453/1950 [00:23<00:12, 120.36it/s, now=None]chunk:  24%|██▍       | 474/1950 [00:23<00:13, 111.96it/s, now=None]/home/eutycus/jacenv/lib/python3.12/site-packages/moviepy/audio/io/readers.py:244: UserWarning: Error in file frontend/assets/music_43.mp3, At time t=22.04-0.03 seconds, indices wanted: 0-972404, but len(buffer)=200000
+index 971831 is out of bounds for axis 0 with size 200000
+  warnings.warn(
+chunk:  25%|██▌       | 492/1950 [00:26<00:58, 25.06it/s, now=None] chunk:  26%|██▋       | 515/1950 [00:26<00:41, 34.44it/s, now=None]chunk:  28%|██▊       | 554/1950 [00:26<00:24, 56.34it/s, now=None]chunk:  30%|██▉       | 577/1950 [00:26<00:21, 63.91it/s, now=None]chunk:  31%|███       | 596/1950 [00:27<00:19, 67.86it/s, now=None]chunk:  31%|███▏      | 612/1950 [00:27<00:18, 74.14it/s, now=None]chunk:  34%|███▍      | 663/1950 [00:27<00:09, 129.91it/s, now=None]chunk:  35%|███▌      | 689/1950 [00:28<00:18, 66.73it/s, now=None] chunk:  37%|███▋      | 726/1950 [00:28<00:13, 93.80it/s, now=None]chunk:  38%|███▊      | 750/1950 [00:28<00:16, 71.63it/s, now=None]chunk:  41%|████      | 794/1950 [00:28<00:10, 106.56it/s, now=None]chunk:  42%|████▏     | 827/1950 [00:29<00:08, 133.21it/s, now=None]chunk:  44%|████▍     | 855/1950 [00:30<00:22, 49.72it/s, now=None] chunk:  45%|████▍     | 876/1950 [00:31<00:21, 49.92it/s, now=None]chunk:  47%|████▋     | 918/1950 [00:31<00:13, 75.56it/s, now=None]chunk:  50%|████▉     | 967/1950 [00:31<00:08, 112.92it/s, now=None]                                                                    Multi-Scene Assembly Error: index 0 is out of bounds for axis 0 with size 0
+INFO:     127.0.0.1:44322 - "GET /api/posts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36264 - "GET /api/posts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54730 - "GET /api/posts HTTP/1.1" 200 OK
+Workflow Finished: Multi-scene video assembly failed
+INFO:     127.0.0.1:42232 - "GET /api/posts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33580 - "GET /api/posts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40976 - "GET /api/posts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44322 - "GET /api/posts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36264 - "GET /api/posts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40976 - "GET /api/posts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36264 - "GET /api/posts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52134 - "GET /api/posts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37282 - "GET /api/posts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37282 - "GET /api/posts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53374 - "GET /api/posts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39316 - "GET /assets/assets/animated_24.mp4 HTTP/1.1" 206 Partial Content
+INFO:     127.0.0.1:37024 - "GET /assets/assets/animated_18.mp4 HTTP/1.1" 206 Partial Content
+INFO:     127.0.0.1:37026 - "GET /api/posts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37024 - "GET /assets/assets/animated_18.mp4 HTTP/1.1" 206 Partial Content
+INFO:     127.0.0.1:37024 - "GET /api/posts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57232 - "GET /api/posts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57240 - "GET /api/posts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58358 - "GET /api/posts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58362 - "GET /api/posts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57132 - "GET /api/posts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57140 - "GET /api/posts HTTP/1.1" 200 OK

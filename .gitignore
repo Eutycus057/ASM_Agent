@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+venv/
+.env
+database.db
+prototype_data.db
+*.mp4
+*.png
+*.mp3
+.agent/
+local_assets/

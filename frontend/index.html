@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eutycreatives Studio | Autonomous Content Production</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/style.css?v=3">
+</head>
+
+<body>
+    <div class="app-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="logo">
+                <span>Eutycreatives Studio</span>
+            </div>
+            <nav>
+                <a href="#" class="active" id="dashboardLink">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <rect x="3" y="3" width="7" height="7"></rect>
+                        <rect x="14" y="3" width="7" height="7"></rect>
+                        <rect x="14" y="14" width="7" height="7"></rect>
+                        <rect x="3" y="14" width="7" height="7"></rect>
+                    </svg>
+                    Dashboard
+                </a>
+            </nav>
+
+            <div class="history-section">
+                <h3>Generated Content</h3>
+                <div id="historyList" class="history-list">
+                    <!-- History items will be injected here -->
+                </div>
+                <div id="historyToggleContainer" class="history-toggle-container hidden">
+                    <button id="historyToggleBtn" class="link-btn">Show More</button>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <header class="top-bar">
+                <h1>Autonomous Content Creation Command Center</h1>
+                <div class="user-profile">
+                    <div class="status-indicator online"></div>
+                    <span>Agent Online</span>
+                </div>
+            </header>
+
+            <div class="studio-grid">
+                <!-- Left Pane: Architect -->
+                <section class="intent-architect-pane">
+                    <div class="glass-card input-card">
+                        <h2>Content Engineering</h2>
+                        <div class="intent-form">
+                            <div class="form-row">
+                                <div class="form-group flex-2">
+                                    <label for="topicInput">Topic / Idea</label>
+                                    <textarea id="topicInput"
+                                        placeholder="What should the video be about? (e.g., 'The evolution of AI in 2024')"></textarea>
+                                </div>
+                            </div>
+                            <div class="form-row selections-grid">
+                                <div class="form-group">
+                                    <label for="platformSelect">Platform</label>
+                                    <select id="platformSelect">
+                                        <option value="TikTok">TikTok / Reels (9:16)</option>
+                                        <option value="YouTube">YouTube (16:9)</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="durationSelect">Duration</label>
+                                    <select id="durationSelect">
+                                        <option value="60">Short (60s)</option>
+                                        <option value="90">Medium (90s)</option>
+                                        <option value="120">Long (120s)</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="toneSelect">Tone</label>
+                                    <select id="toneSelect">
+                                        <option value="Professional">Professional</option>
+                                        <option value="Informative">Informative</option>
+                                        <option value="Energetic">Energetic</option>
+                                        <option value="Cinematic">Cinematic</option>
+                                        <option value="Storyteller">Storyteller</option>
+                                        <option value="Funny">Funny</option>
+                                    </select>
+                                </div>
+                                <div class="form-group toggle-group">
+                                    <label for="captionToggle">Captions</label>
+                                    <div class="toggle-control">
+                                        <label class="switch">
+                                            <input type="checkbox" id="captionToggle" checked>
+                                            <span class="slider round">
+                                                <span class="on">ON</span>
+                                                <span class="off">OFF</span>
+                                            </span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-actions">
+                                <button id="runBtn" class="primary-btn wide-btn">
+                                    <span class="btn-text">Generate Content</span>
+                                    <div class="loader hidden"></div>
+                                </button>
+                            </div>
+                        </div>
+                        <p class="helper-text">Single-action production: Agent writes, narrates, and animates everything
+                            based on your intent.</p>
+                    </div>
+                </section>
+
+                <!-- Right Pane: Showcase -->
+                <section class="output-showcase-pane">
+                    <div class="feed-header">
+                        <h2>Mission Showcase</h2>
+                        <button class="icon-btn" id="refreshBtn">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M23 4v6h-6"></path>
+                                <path d="M1 20v-6h6"></path>
+                                <path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"></path>
+                            </svg>
+                        </button>
+                    </div>
+
+                    <div id="postsContainer" class="posts-grid">
+                        <!-- Posts will be injected here -->
+                        <div class="empty-state">
+                            <p>No active animations. Start the Architect on the left to begin.</p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+    </div>
+
+    <!-- Post Template (Hidden) -->
+    <template id="postTemplate">
+        <div class="post-card">
+            <div class="post-visual hidden">
+                <img src="" alt="AI Visual Preview" class="generated-image">
+                <video src="" class="generated-video hidden" loop muted playsinline></video>
+                <div class="play-overlay hidden">
+                    <svg width="40" height="40" viewBox="0 0 24 24" fill="#fff">
+                        <path d="M8 5v14l11-7z" />
+                    </svg>
+                </div>
+                <div class="video-captions hidden"></div>
+                <button class="mute-btn hidden" title="Toggle Audio">
+                    <svg class="unmute-icon" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2">
+                        <path d="M11 5L6 9H2v6h4l5 4V5z" />
+                        <path class="vol-wave" d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07" />
+                    </svg>
+                    <svg class="mute-icon hidden" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2">
+                        <path d="M11 5L6 9H2v6h4l5 4V5z" />
+                        <line x1="23" y1="9" x2="17" y2="15" />
+                        <line x1="17" y1="9" x2="23" y2="15" />
+                    </svg>
+                </button>
+            </div>
+            <div class="post-body">
+                <div class="post-header">
+                    <span class="timestamp">Just now</span>
+                </div>
+                <h3 class="post-title">Title Here</h3>
+
+                <div class="production-steps">
+                    <!-- Progress bars will be injected here -->
+                </div>
+                <div class="analysis-mini">
+                    <span class="metric">Virality: <strong class="virality-score">8/10</strong></span>
+                    <span class="metric">Hook: <span class="hook-type">Visual</span></span>
+                </div>
+                <div class="quality-insights">
+                    <div class="hook-variations">
+                        <h5>Strategic Hooks</h5>
+                        <ul class="hook-list"></ul>
+                    </div>
+                    <div class="payoff-preview">
+                        <strong>Emotional Payoff:</strong> <span class="payoff-text">...</span>
+                    </div>
+                </div>
+                <div class="script-preview">
+                    <h4>Script Draft</h4>
+                    <p class="script-text">...</p>
+                </div>
+                <div class="visual-cue">
+                    <strong>Visual:</strong> <span class="visual-text">...</span>
+                </div>
+                <div class="post-actions">
+                    <button class="action-btn download-btn">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                            <polyline points="7 10 12 15 17 10" />
+                            <line x1="12" y1="15" x2="12" y2="3" />
+                        </svg>
+                        Download Video
+                    </button>
+                </div>
+            </div>
+        </div>
+    </template>
+
+    <template id="progressTemplate">
+        <div class="post-card progress-card">
+            <div class="progress-body">
+                <div class="mission-header-row">
+                    <span class="mission-topic-label">Mission: <span class="mission-topic"></span></span>
+                    <span class="status-badge INITIALIZING">IN PROGRESS</span>
+                </div>
+
+                <div class="production-steps">
+                    <!-- Progress bars will be injected here by app.js -->
+                </div>
+
+                <div class="progress-footer">
+                    <p class="progress-footer-text">The Creative Director is refining your vision...</p>
+                    <div class="progress-actions hidden">
+                        <button class="resume-btn">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M5 3l14 9-14 9V3z" />
+                            </svg>
+                            Resume Mission
+                        </button>
+                        <button class="discard-btn" title="Discard incomplete production">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <polyline points="3 6 5 6 21 6"></polyline>
+                                <path
+                                    d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2">
+                                </path>
+                            </svg>
+                            Discard
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </template>
+
+    <script src="/assets/app.js?v=15"></script>
+</body>
+
+</html>

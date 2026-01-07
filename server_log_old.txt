@@ -1,0 +1,33 @@
+INFO:     Started server process [9233]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+INFO:     127.0.0.1:40778 - "GET /api/posts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40778 - "GET /api/posts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35682 - "GET /api/posts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35710 - "POST /api/run-workflow HTTP/1.1" 200 OK
+Starting workflow for topic: mental health
+--- Trend Discovery: mental health ---
+--- Scraping Real Trends from: https://www.tiktok.com/tag/mental ---
+INFO:     127.0.0.1:55092 - "GET /api/posts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53352 - "GET /api/posts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46862 - "GET /api/posts HTTP/1.1" 200 OK
+No trends found via scraping (Selectors might have changed or bot detection triggered). Falling back to mock for stability.
+Workflow Finished: No new unique trends found
+INFO:     127.0.0.1:36020 - "GET /api/posts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36020 - "GET /api/posts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54094 - "GET /api/posts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47094 - "POST /api/run-workflow HTTP/1.1" 200 OK
+Starting workflow for topic: new space discovery
+--- Trend Discovery: new space discovery ---
+--- Scraping Real Trends from: https://www.tiktok.com/tag/new ---
+INFO:     127.0.0.1:47102 - "GET /api/posts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54596 - "GET /api/posts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49502 - "GET /api/posts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:48742 - "GET /api/posts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47286 - "GET /api/posts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47286 - "GET /api/posts HTTP/1.1" 200 OK
+No trends found via scraping (Selectors might have changed or bot detection triggered). Falling back to mock for stability.
+Workflow Finished: No new unique trends found
+INFO:     127.0.0.1:49446 - "GET /api/posts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45638 - "GET /api/posts HTTP/1.1" 200 OK

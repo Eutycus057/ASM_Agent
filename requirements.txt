@@ -1,0 +1,10 @@
+fastapi
+uvicorn
+pydantic
+langchain
+langgraph
+openai
+yt-dlp
+python-dotenv
+playwright
+edge-tts
