@@ -7,9 +7,8 @@ __pycache__/
 *.mp3
 *.png
 *.log
-*.txt
-database.db
-prototype_data.db
+*.sqlite
+*.db
 node_modules/
 .venv/
 .agent/
