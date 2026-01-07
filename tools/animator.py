@@ -5,7 +5,9 @@ import moviepy.audio.fx as afx
 from typing import List, Optional
 
 class CharacterAnimator:
-    def __init__(self, output_dir: str = "frontend/assets"):
+    def __init__(self, output_dir: str = None):
+        if output_dir is None:
+            output_dir = "/tmp/assets" if os.environ.get("VERCEL") else "frontend/assets"
         self.output_dir = output_dir
         os.makedirs(self.output_dir, exist_ok=True)
 

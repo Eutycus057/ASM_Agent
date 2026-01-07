@@ -9,7 +9,8 @@ load_dotenv()
 
 class Database:
     def __init__(self):
-        self.db_path = os.environ.get("DATABASE_PATH", "./prototype_data.db")
+        default_db = "/tmp/database.db" if os.environ.get("VERCEL") else "./prototype_data.db"
+        self.db_path = os.environ.get("DATABASE_PATH", default_db)
         self.init_db()
 
     def init_db(self):

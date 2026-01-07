@@ -25,7 +25,9 @@ def clean_narration_text(text: str) -> str:
 load_dotenv()
 
 class AudioGenerator:
-    def __init__(self, output_dir: str = "frontend/assets"):
+    def __init__(self, output_dir: str = None):
+        if output_dir is None:
+            output_dir = "/tmp/assets" if os.environ.get("VERCEL") else "frontend/assets"
         self.output_dir = output_dir
         os.makedirs(self.output_dir, exist_ok=True)
         self.api_key = os.environ.get("OPENAI_API_KEY")
