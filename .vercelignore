@@ -1,0 +1,16 @@
+frontend/assets/*
+local_assets/
+venv/
+.git/
+__pycache__/
+*.mp4
+*.mp3
+*.png
+*.log
+*.txt
+database.db
+prototype_data.db
+node_modules/
+.venv/
+.agent/
+video_temp/
