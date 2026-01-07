@@ -8,3 +8,7 @@ yt-dlp
 python-dotenv
 playwright
 edge-tts
+google-generativeai
+requests
+moviepy
+Pillow
